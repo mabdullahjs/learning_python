@@ -1,5 +1,4 @@
 
-
 ## 🧠 Python Object Types / Data Types
 
 Python is a dynamically typed language with a rich set of built-in object types. Below is a categorized list of the most commonly used types and structures.
@@ -17,7 +16,7 @@ Integers, Floats, Complex Numbers, Binary, Decimal, and Fractions:
 from decimal import Decimal
 from fractions import Fraction
 Decimal('1.1'), Fraction(1, 3)
-````
+```
 
 #### 🔤 String
 
@@ -151,5 +150,3 @@ type('MyClass', (object,), {})
 ---
 
 ## 📚 Conclusion
-
-Python's data types provide a flexible and expressive way to handle a wide variety of tasks, from basic scripting to advanced programming paradigms like metaprogramming and functional programming.
