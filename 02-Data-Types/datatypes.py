@@ -60,3 +60,15 @@
 
 # myTup = (1, 2, 3)
 # print(myTup)
+
+
+
+
+
+# x = 10
+# y = x
+# print("before ===>" , x)
+# print("before reassignment ===>" ,y)
+# x = 20;
+# print("after ===>" , x)
+# print(y)
