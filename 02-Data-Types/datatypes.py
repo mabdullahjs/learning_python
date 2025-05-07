@@ -62,9 +62,6 @@
 # print(myTup)
 
 
-
-
-
 # x = 10
 # y = x
 # print("before ===>" , x)
@@ -72,3 +69,24 @@
 # x = 20;
 # print("after ===>" , x)
 # print(y)
+
+
+# mylist = [1, 2, 3]
+# mylistTwo = mylist
+
+# mylist[0] = 55
+# print(mylistTwo)
+
+
+
+
+mylist = [1, 2, 3]
+mylistTwo = mylist
+
+# mylist[0] = 55
+print(mylistTwo)
+
+# mylistTwo = [1 , 2 , 3]
+
+print(mylistTwo == mylist)
+print(mylistTwo is mylist)
