@@ -23,6 +23,7 @@ fruits = ['apple' , 'banana' , 'orange' , 'mango' , 'watermelon']
 
 # print(msg)
 
+<<<<<<< HEAD
 # print(username.lower())
 # print(username.upper())
 # print(username.strip())
@@ -41,3 +42,14 @@ fruits = ['apple' , 'banana' , 'orange' , 'mango' , 'watermelon']
 # # name[1] = "F"
 
 # print(name)
+=======
+print(username.lower())
+print(username.upper())
+print(username.strip())
+print(username.replace('bd' , 'au'))
+print(msg.split(' '))
+print(" ".join(fruits))
+print(msg.find("abdullah"))
+print(msg.startswith("M"))
+print(msg.endswith("."))
+>>>>>>> 4db1e9a8b522270e62919a53be793da431ad86d7
