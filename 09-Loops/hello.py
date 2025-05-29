@@ -11,9 +11,6 @@
 # print(positiveNum)
 
 
-
-
-
 # num = [2,4,6,8,10,12,16,18]
 # sum = 0
 # for x in num:
@@ -22,12 +19,31 @@
 # print(sum)
 
 
-
-
 # num = 5
 
 # for x in range(1 , 11):
 #     print(f'{num} * {x} = {num*x}') if x!= 5 else None
 
 
+# factorial number
+# num = 10
+# fac = 1
+# while num > 0:
+#     print(num)
+#     fac = fac * num
+#     num = num - 1
 
+
+# print(fac)
+
+
+userInput = int(input("enter any num between 1 to 10 ==> "))
+# print(userInput)
+
+
+while True:
+    if userInput < 10 and userInput > 0:
+        print("correct")
+        break
+    else:
+        userInput = int(input("enter any num between 1 to 10"))
