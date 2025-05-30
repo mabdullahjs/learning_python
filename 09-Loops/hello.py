@@ -37,13 +37,32 @@
 # print(fac)
 
 
-userInput = int(input("enter any num between 1 to 10 ==> "))
+# userInput = int(input("enter any num between 1 to 10 ==> "))
 # print(userInput)
 
 
-while True:
-    if userInput < 10 and userInput > 0:
-        print("correct")
-        break
-    else:
-        userInput = int(input("enter any num between 1 to 10"))
+# while True:
+#     if userInput < 10 and userInput > 0:
+#         print("correct")
+#         break
+#     else:
+#         userInput = int(input("enter any num between 1 to 10"))
+
+# print('testing ')
+
+
+list = [1,2,3,4,5,6]
+
+# for i in list:
+#     print(i)
+
+I = iter(list)
+print(I)
+print(I.__next__())
+print(I.__next__())
+print(I.__next__())
+print(I.__next__())
+print(I.__next__())
+print(I.__next__())
+print(I.__next__())
+
