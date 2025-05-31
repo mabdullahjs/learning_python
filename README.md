@@ -14,4 +14,4 @@ Feel free to explore the folders, follow along, or contribute!
 
 ---
 **Author:** Muhammad Abdullah  
-**Role:** Full Stack Developer, Instructor at SMIT
+**Role:** Full Stack Developer, Instructor at Saylani Mass IT Training
