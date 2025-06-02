@@ -72,15 +72,36 @@
 # using **kwargs is good when you dont know how many argument will pass
 
 
-evenList = []
-def limitEven(num):
-    for val in range(1 , num + 1):
-        if val % 2 == 0:
-            evenList.append(val)
+# evenList = []
+# def limitEven(num):
+#     for val in range(1 , num + 1):
+#         if val % 2 == 0:
+#             evenList.append(val)
     
-    return evenList
+#     return evenList
 
-print(limitEven(100))
+# print(limitEven(100))
 
 
 
+# def limitEven(num):
+#     for num in range(2 , num + 1 , 2):
+#         yield num
+
+
+# print(limitEven(10))
+
+# for num in limitEven(10):
+#     print(num)
+
+
+
+
+def recursion(n):
+    if(n == 0):
+        return 0
+    else:
+        return n + recursion(n - 1)
+    
+
+print(recursion(10))
