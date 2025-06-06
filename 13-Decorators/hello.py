@@ -58,18 +58,47 @@ import time
 
 
 
-def func_info(func):
-    def wrapper(*args , **kwargs):
-        args_value = ', '.join(str(arg) for arg in args)
-        kwargs_value = ', '.join(f"{k}={v}" for k, v in kwargs.items())
-        result = func(*args , **kwargs)
-        print(f"calling: {func.__name__} with args {args_value} and kwargs {kwargs_value}")
-        return result
+# def func_info(func):
+#     def wrapper(*args , **kwargs):
+#         args_value = ', '.join(str(arg) for arg in args)
+#         kwargs_value = ', '.join(f"{k}={v}" for k, v in kwargs.items())
+#         result = func(*args , **kwargs)
+#         print(f"calling: {func.__name__} with args {args_value} and kwargs {kwargs_value}")
+#         return result
     
-    return wrapper
+#     return wrapper
 
-@func_info
-def greetUser(username , age = 21):
-    return f"hello {username} with age {age}"
+# @func_info
+# def greetUser(username , age = 21):
+#     return f"hello {username} with age {age}"
 
 # print(greetUser("abdullah" , age=29))
+
+
+# cache question
+
+
+def cache(func):
+    cache_value = {}
+    def wrapper(*args):
+        if args in cache_value:
+            return cache_value[args]
+        result = func(*args)
+        cache_value[args] = result
+        return result
+    return wrapper
+
+
+
+
+@cache
+def time_taken_task(num1 , num2):
+    time.sleep(1)
+    return num1 + num2
+
+print(time_taken_task(2 , 3))
+print(time_taken_task(2 , 3))
+print(time_taken_task(5 , 3))
+print(time_taken_task(5 , 3))
+
+
