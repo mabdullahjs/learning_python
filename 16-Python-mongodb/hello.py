@@ -1,6 +1,7 @@
 import pymongo
 
-client = pymongo.MongoClient("mongodb+srv://mabdullah2037:bustop123@testing.fsplzwv.mongodb.net/", tlsAllowInvalidCertificates=True)
+mongoENV = "*"
+client = pymongo.MongoClient(mongoENV, tlsAllowInvalidCertificates=True)
 
 print(client)
 db = client["taskmanager"]
